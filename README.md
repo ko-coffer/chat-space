@@ -9,6 +9,8 @@
 |password|string|null: false|
 
 ## Association
+
+- has_many :group
 - belongs_to :group
 
 
@@ -22,6 +24,8 @@
 |user_id|integer|null: false, foreign_key: true|
 
 ## Association
+
+- has_many :user
 - belongs_to :user
 
 
