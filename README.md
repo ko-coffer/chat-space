@@ -52,6 +52,7 @@
 |group_id|references|null: false, foreign_key: true|
 
 ### Association
-
+- has_many :groups_users
+- has_many :users, through: :group_users
 - belongs_to :user
 
