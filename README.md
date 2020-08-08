@@ -9,10 +9,8 @@
 |password|string|null: false|
 
 ## Association
-
-- has_many :group
-- belongs_to :group
-
+- has_many :groups, through:  :groups_users
+- has_many :groups_users
 
 
 
@@ -20,12 +18,12 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|group_name|string|index: true, null: false, unique: true|
-|user_id|integer|null: false, foreign_key: true|
+|name|string|index: true, null: false, unique: true|
+||integer|null: false, foreign_key: true|
 
 ## Association
 
-- has_many :user
+- has_many :groups_users
 - belongs_to :user
 
 
@@ -51,3 +49,8 @@
 |text|text||
 |user_id|references|null: false, foreign_key: true|
 |group_id|references|null: false, foreign_key: true|
+
+### Association
+
+- belongs_to :user
+
