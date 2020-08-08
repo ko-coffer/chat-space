@@ -1,6 +1,6 @@
 # README
 
-## userテーブル
+## usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -16,7 +16,7 @@
 
 
 
-## groupテーブル
+## groupsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -41,3 +41,13 @@
 ### Association
 - belongs_to :group
 - belongs_to :user
+
+
+## messagesテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|image|text||
+|text|text||
+|user_id|references|null: false, foreign_key: true|
+|group_id|references|null: false, foreign_key: true|
