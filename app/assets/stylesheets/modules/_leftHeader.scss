@@ -16,24 +16,53 @@
 }
 
 .LeftHeader__list {
-  background-color: #d8d8d8;
   height: 20px;
   width: 260px;
   display: flex;
   justify-content: space-between;
   margin: 0 20px;
+  color: #ffffff;
 }
 
 .LeftHeader__user {
-
+  font-size: 16px;
 }
 
 .LeftHeader__iconList {
-
+  width: 60px;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.Left__Group {
+.far {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.fas {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.GroupList {
   background-color: #2f3e51;
   width: 300px;
   height: calc(100vh - 100px);
+}
+
+.Group {
+  padding: 20px 0 40px;
+  margin: 0 20px 0 20px;
+}
+
+.Group__name {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.Group__message {
+  color: #ffffff;
+  font-size: 11px;
+  margin-top: 5px;
 }
