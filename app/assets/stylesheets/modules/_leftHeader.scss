@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+.Left__contents {
+  background-color: #ffffff;
+  width: 300px;
+}
+
+.LeftHeader {
+  background-color: #253141;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.Left__Group {
+  background-color: #2f3e51;
+  width: 300px;
+  height: calc(100vh - 100px);
+}
