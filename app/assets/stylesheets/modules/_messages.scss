@@ -38,10 +38,11 @@
 
 .Message {
   margin-top: 12px;
+
+  &__content {
+    color: #434a5a;
+    font-size: 14px;
+  }
 }
 
 
-.Message__content {
-  color: #434a5a;
-  font-size: 14px;
-}
