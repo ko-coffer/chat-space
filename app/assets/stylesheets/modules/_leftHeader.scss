@@ -13,16 +13,17 @@
   height: 100px;
   display: flex;
   align-items: center;
+
+  &__list {
+    color: #ffffff;
+    width: 260px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+  }
 }
 
-.LeftHeader__list {
-  color: #ffffff;
-  width: 260px;
-  height: 20px;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 20px;
-}
 
 .LeftHeader__user {
   font-size: 16px;
