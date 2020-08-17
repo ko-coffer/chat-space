@@ -28,15 +28,13 @@
 }
 
 
-.Message__user {
-  color: #333333;
-  font-size: 16px;
-}
-
-
-
 .Message {
   margin-top: 12px;
+
+  &__user {
+    color: #333333;
+    font-size: 16px;
+  }
 
   &__content {
     color: #434a5a;
