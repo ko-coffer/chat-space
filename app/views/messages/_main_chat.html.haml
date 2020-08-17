@@ -34,9 +34,9 @@
   .Footer__form
     = form_with url:"/messages/index", html:{class: "Form"}, locals: true do |f|
       .Form__contents
-        = f.text_field :content, class: "Form__input"
+        = f.text_field :content, class: "Form__input",placeholder:'type a message'
         = f.label :image, class: "Form__input__image" do
           = f.file_field :image, class: "Form__image"
-          = icon('fa', 'image')
+          = icon('fa', 'image', class: "fa__image")
       .Form__submit
         SEND
