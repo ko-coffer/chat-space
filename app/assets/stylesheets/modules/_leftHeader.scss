@@ -22,18 +22,18 @@
     justify-content: space-between;
     margin: 0 20px;
   }
+
+  &__user {
+    font-size: 16px;
+  }
+
+  &__iconList {
+    width: 60px;
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
-
-.LeftHeader__user {
-  font-size: 16px;
-}
-
-.LeftHeader__iconList {
-  width: 60px;
-  display: flex;
-  justify-content: flex-end;
-}
 
 .far {
   color: #ffffff;
@@ -55,15 +55,15 @@
 .Group {
   padding: 20px 0 40px;
   margin: 0 20px 0 20px;
-}
 
-.Group__name {
-  color: #ffffff;
-  font-size: 15px;
-}
+  &__name {
+    color: #ffffff;
+    font-size: 15px;
+  }
 
-.Group__message {
-  color: #ffffff;
-  font-size: 11px;
-  margin-top: 5px;
+  &__message {
+    color: #ffffff;
+    font-size: 11px;
+    margin-top: 5px;
+  }
 }

@@ -23,6 +23,21 @@
     font-size: 20px;
     margin-top: 35px;
   }
+
+  &__edit {
+    color: #38aef0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    margin-top: 28px;
+    padding: 0 20px;
+    display: block;
+    border: 1px solid #38aef0;
+    a {
+      color: #38aef0;
+      text-decoration: none;
+    }
+  }
 }
 
 
@@ -31,24 +46,9 @@
   color: #999999;
   font-size: 12px;
   margin-top: 15px;
-}
 
-.group__member {
+  &__member {
 
-}
-
-.RightHeader__edit {
-  color: #38aef0;
-  height: 40px;
-  line-height: 40px;
-  font-size: 16px;
-  margin-top: 28px;
-  padding: 0 20px;
-  display: block;
-  border: 1px solid #38aef0;
-  a {
-    color: #38aef0;
-    text-decoration: none;
   }
 }
 
@@ -62,25 +62,25 @@
 .Form {
   display: flex;
   justify-content: space-between;
+  
+  &__contents {
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+
+  &__input {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    padding: 0px 45px 0px 15px;
+    margin: 0px 0px 0px 5px;
+    border: none;
+  }
 }
 
 
-.Form__contents {
-  background-color: #ffffff;
-  width: 100%;
-  display: flex;
-  position: relative;
-}
-
-
-.Form__input {
-  width: 100%;
-  height: 50px;
-  position: relative;
-  padding: 0px 45px 0px 15px;
-  margin: 0px 0px 0px 5px;
-  border: none;
-}
 
 .Form__input__image {
   height: 50px;
