@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+}
+
+
+.Main__chat {
+  background-color: #fafafa;
+  height: calc(100vh - 100px - 90px);
+  padding: 35px 40px 0px;
+}
+
+
+.Chat__box {
+  margin-bottom: 46px;
+}
+
+.Chat__info {
+  display: flex;
+}
+
+.Chat__date {
+  color: #999999;
+  font-size: 12px;
+}
+
+
+.Message {
+  margin-top: 12px;
+
+  &__user {
+    color: #333333;
+    font-size: 16px;
+  }
+
+  &__content {
+    color: #434a5a;
+    font-size: 14px;
+  }
+}
+
+
