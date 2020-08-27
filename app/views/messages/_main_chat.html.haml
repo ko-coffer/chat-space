@@ -2,41 +2,27 @@
   .RightHeader
     .RightHeader__group
       .RightHeader__groupName
-        テスト
+        = @group.name
       .group__memberList
         .group__member
-          ゆう
+          Member :
+          - @group.users.each do |user|
+            = user.name
     .RightHeader__edit
-      = link_to "#" do
-        = ('Edit')
+      = link_to edit_group_path(@group) do
+        Edit
 
   .Main__chat
-    .Chat__box
-      .Chat__info
-        .Message__user
-          こう
-        .Chat__date
-          2020/08/14(wed)08:14:24
-      .Message
-        .Message__content
-          まだメッセージはありません
-    .Chat__box
-      .Chat__info
-        .Message__user
-          こう
-        .Chat__date
-          2020/08/14(wed)08:14:24
-      .Message
-        .Message__content
-          まだメッセージはありません
+    = render @messages
+      
           
 
   .Footer__form
-    = form_with url:"/messages/index", html:{class: "Form"}, locals: true do |f|
+    = form_with model: [@group, @message], html: {class: "Form"}, local: true do |f|
       .Form__contents
         = f.text_field :content, class: "Form__input",placeholder:'type a message'
         = f.label :image, class: "Form__input__image" do
           = f.file_field :image, class: "Form__image"
           = icon('fa', 'image', class: "fa__image")
       .Form__submit
-        SEND
+        = f.submit 'Send', class: 'submit'

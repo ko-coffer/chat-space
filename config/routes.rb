@@ -4,8 +4,9 @@ Rails.application.routes.draw do
   # 下の行は削除する
   # get 'messages/index'
 
-  root "messages#index"
+  root 'groups#index'
   resources :users, only: [:edit, :update]
-  resources :groups, only: [:new, :create, :edit, :update]
-  resources :groups, only: [:index, :new, :create, :edit, :update]
+  resources :groups, only: [:new, :create, :edit, :update] do
+    resources :messages, only: [:index, :create, ]
+  end
 end
